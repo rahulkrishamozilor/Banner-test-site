@@ -42,41 +42,130 @@ window.uetq.push('consent', 'default', {
 
     
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-    <title>Cookie Banner Test Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fancy Crypto Exchange</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <!-- Load shared components first -->
+    <script src="/shared/components/header.js"></script>
+    <script src="/shared/components/footer.js"></script>
+    <!-- Load functionality -->
+    <script src="/assets/js/cookieManager.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <style>
+        :root {
+            --primary-color: #6c5ce7;
+            --bg-color: #0a0a0a;
+            --text-color: #ffffff;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+
+        .hero-section {
+            padding: 80px 20px;
+            background: linear-gradient(45deg, rgba(10,10,10,0.99), rgba(10,10,10,0.95));
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #888;
+            margin-bottom: 40px;
+        }
+
+        .signup-form {
+            display: flex;
+            gap: 10px;
+            max-width: 500px;
+            margin-bottom: 40px;
+        }
+
+        input[type="email"] {
+            flex: 1;
+            padding: 15px 20px;
+            border-radius: 8px;
+            border: 1px solid #333;
+            background: rgba(255,255,255,0.1);
+            color: white;
+        }
+
+        .get-started-btn {
+            padding: 15px 30px;
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .video-section {
+            padding: 60px 20px;
+            background: rgba(255,255,255,0.02);
+        }
+
+        .video-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 30px;
+            padding: 20px;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: var(--text-color);
+        }
+    </style>
 </head>
 <body>
-
-    <!-- Dummy Cookies Setup -->
-    <script>
-        document.cookie = "site_pref=dark_mode; path=/;";
-        document.cookie = "session_id=123456789; path=/;";
-        document.cookie = "analytics_opt_in=true; path=/;";
-    </script>
-
-    <!-- Main Content -->
-    <header>
-        <h1>Welcome to the Cookie Banner Test Website</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
-
+    <header></header>
     <main>
-        <section>
-            <h2>Embedded Videos</h2>
-            <div>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>Faster, better,<br>more efficient<br>crypto exchange</h1>
+                <p class="subtitle">Sign up, trade, and earn up to 200 USDT</p>
+                <form class="signup-form">
+                    <input type="email" placeholder="Email / Phone number" required>
+                    <button type="submit" class="get-started-btn">Get started</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="video-section">
+            <h2>Featured Content</h2>
+            <div class="video-container">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/5AUbODEz6w0?si=Oph4k8Guu26W83ji" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 <iframe width="560" height="315" src="https://www.dailymotion.com/embed/video/x7xq0ew" frameborder="0" allowfullscreen></iframe>
             </div>
         </section>
     </main>
-
-    <footer>
-        <p>&copy; 2025 Cookie Banner Test Website</p>
-    </footer>
+    <footer></footer>
 </body>
 </html>
