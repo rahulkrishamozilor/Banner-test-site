@@ -2,33 +2,46 @@
 <html lang="en">
 <head>
 
-<!--   <script id="cookieyes" type="text/javascript" src="https://mojoview.com/client_data/fd7391552a6be1b8d4d90052/script.js"></script> 
- -->
 
-<!-- Start cookieyes banner Anzil --> 
-<!--  <script id="cookieyes" type="text/javascript" src="https://mojoview.com/client_data/a5ec79600b5668f2f6c4edbd/script.js"></script> 
- <!-- End cookieyes banner --> -->
-
-<!-- Start cookieyes banner --> <script id="cookieyes" type="text/javascript" src="https://mojoview.com/client_data/75794a40f5fe0c5b4b0169b0/script.js"></script> <!-- End cookieyes banner -->    <script>(function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"343168301", enableAutoSpaTracking: true};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");</script>
-
-<!--      <script>
+ 
+<script>
 window.uetq = window.uetq || [];
 window.uetq.push('consent', 'default', {
     'ad_storage': 'denied'
     });
-</script> -->
+</script>
+ 
+<script id="cookieyes" type="text/javascript" src="https://mojoview.com/client_data/fd7391552a6be1b8d4d90052/script.js"></script> 
 
+<script>
+    function initializeUET() {
+     
 
-
-    <script type="text/javascript">
-
-        
     (function(c,l,a,r,i,t,y){
         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
         t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "px8mpikk5x");
+
+    
+    
+    }
+    document.addEventListener('cookieyes_banner_load', (eventData) => {
+        const data = eventData.detail;
+        if (data.categories.advertisement) initializeUET();
+        else document.addEventListener('cookieyes_consent_update', handleConsentUpdate);
+    });
+    function handleConsentUpdate(eventData) {
+        const data = eventData.detail;
+        if (data.accepted.includes("advertisement")) initializeUET();
+    }
 </script>
+
+
+
+
+
+    
 
  <!-- Google tag (gtag.js) -->
 
