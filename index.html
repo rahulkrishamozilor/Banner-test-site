@@ -12,28 +12,30 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
  
  
 <script id="cookieyes" type="text/javascript" src="https://mojoview.com/client_data/fd7391552a6be1b8d4d90052/script.js"></script> 
+     
+ <script> (function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"343168301", enableAutoSpaTracking: true};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");
 
-<script>
-    function initializeUET() {
+
+// <script>
+//     function initializeUET() {
      
 
-    (function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"343168301", enableAutoSpaTracking: true};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");
 
-//     window.uetq = window.uetq || [];
-// window.uetq.push('consent', 'default', {
-//     'ad_storage': 'denied'
-//     });
+// //     window.uetq = window.uetq || [];
+// // window.uetq.push('consent', 'default', {
+// //     'ad_storage': 'denied'
+// //     });
     
-    }
-    document.addEventListener('cookieyes_banner_load', (eventData) => {
-        const data = eventData.detail;
-        if (data.categories.advertisement) initializeUET();
-        else document.addEventListener('cookieyes_consent_update', handleConsentUpdate);
-    });
-    function handleConsentUpdate(eventData) {
-        const data = eventData.detail;
-        if (data.accepted.includes("advertisement")) initializeUET();
-    }
+//     }
+//     document.addEventListener('cookieyes_banner_load', (eventData) => {
+//         const data = eventData.detail;
+//         if (data.categories.advertisement) initializeUET();
+//         else document.addEventListener('cookieyes_consent_update', handleConsentUpdate);
+//     });
+//     function handleConsentUpdate(eventData) {
+//         const data = eventData.detail;
+//         if (data.accepted.includes("advertisement")) initializeUET();
+    // }
 </script>
 
 
