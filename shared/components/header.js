@@ -23,6 +23,8 @@ class Header extends HTMLElement {
                         <a href="index.html" style="color: var(--text-color); text-decoration: none; margin: 0 15px; padding: 8px 15px; border-radius: 5px; transition: background-color 0.3s;">Home</a>
                         <a href="pages/about.html" style="color: var(--text-color); text-decoration: none; margin: 0 15px; padding: 8px 15px; border-radius: 5px; transition: background-color 0.3s;">About</a>
                         <a href="pages/contact.html" style="color: var(--text-color); text-decoration: none; margin: 0 15px; padding: 8px 15px; border-radius: 5px; transition: background-color 0.3s;">Contact</a>
+                        <a onclick="pushPurchaseEvent()" style="color: var(--text-color); text-decoration: none; margin: 0 15px; padding: 8px 15px; border-radius: 5px; transition: background-color 0.3s;">Purchase</a>
+
                     </div>
                 </nav>
             </header>
